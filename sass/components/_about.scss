@@ -1,4 +1,9 @@
-.section-title {
+.section-about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-about__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -19,19 +24,20 @@
   padding: 0 15px;
 }
 
-.section-list {
+.section-about__list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+  list-style: none;
 }
 
-.about-list {
+.section-about__item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-right: 30px;
   position: relative;
 }
 
-.about-list::after {
+.section-about__item::after {
   content: "";
   display: block;
   position: absolute;
@@ -41,7 +47,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.textoncard {
+.section-about__textoncard {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
