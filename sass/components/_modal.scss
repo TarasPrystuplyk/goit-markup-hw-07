@@ -43,6 +43,9 @@
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
+  & :hover {
+    fill: #2196f3;
+  }
 }
 
 .modal__close-icon {
@@ -52,9 +55,9 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__modal-close :hover {
-  fill: #2196f3;
-}
+// .modal__modal-close :hover {
+//   fill: #2196f3;
+// }
 
 .is-hidden {
   visibility: hidden;
@@ -89,6 +92,13 @@
   padding-left: 42px;
   padding-right: 12px;
   background-color: transparent;
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: #2196f3;
+  }
 }
 
 .modal-form-field {
@@ -98,6 +108,13 @@
 .modal__input-wrap {
   position: relative;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: #2196f3;
+  }
 }
 
 .modal__input-icon {
@@ -106,21 +123,24 @@
   transform: translateY(-50%);
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    fill: #2196f3;
+  }
 }
 
-.modal__input-icon:focus {
-  fill: #2196f3;
-}
+// .modal__input-icon:focus {
+//   fill: #2196f3;
+// }
 
-.modal__input-wrap:hover,
-.modal__input:hover,
-.modal__input-wrap:focus,
-.modal__input:focus {
-  border-color: #2196f3;
-  box-sizing: border-box;
-  border-radius: 4px;
-  fill: #2196f3;
-}
+// .modal__input-wrap:hover,
+// .modal__input:hover,
+// .modal__input-wrap:focus,
+// .modal__input:focus {
+//   border-color: #2196f3;
+//   box-sizing: border-box;
+//   border-radius: 4px;
+//   fill: #2196f3;
+// }
 
 .modal__input::placeholder {
   font-family: Roboto;
@@ -191,13 +211,18 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
 }
 
-.button-modal:hover {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
+// .button-modal:hover {
+//   background-color: #188ce8;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+// }
 
 .modal-check-text {
   font-family: Roboto;
